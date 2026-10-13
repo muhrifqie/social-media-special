@@ -2,6 +2,8 @@
 
 Catat keputusan baru di atas (terbaru di atas). Format: tanggal · keputusan · alasan.
 
+- **2026-10-14 · Folder diberi awalan tanggal: `posts/<YYYY-MM-DD>_<projek>/`** (permintaan owner, menggantikan keputusan "nama folder = nama projek" di bawah). Tanggal = `createdAt` projek di `meta.json` HyperFrames (WIB), **bukan tanggal tayang**: tanggal tayang sering geser (#09 dimajukan, #06 diunggah ulang) sehingga folder harus di-rename terus dan riwayat git kotor. Diganti pakai `git mv` (riwayat ikut), 161 file / 553.885.525 byte tetap sama. Skrip HyperFrames mencari folder `*_<projek>` dulu, baru membuat yang baru.
+
 - **2026-10-14 · Repo dibuat, hasil final dipindah dari HyperFrames.** `HyperFrames/konten/<projek>/upload/` → `posts/<projek>/`, `upload-3x4/` → `posts/<projek>/3x4/`, `JADWAL-UPLOAD.md` ikut pindah. 161 file, 553.885.525 byte — dicek sama persis sebelum & sesudah (dipindah, bukan disalin). Render mentah & versi lama tetap di HyperFrames (bisa dibuat ulang). Alasan: owner mau hasil konten terpisah dari workspace produksi dan rapi untuk GitHub.
 - **2026-10-14 · Video & audio tidak di-push.** `.mp4/.mov/.webm/.mp3/.wav/.m4a/.zip/.rar` di-gitignore. Alasan: 4 master > 100 MB (batas GitHub per file: prompt-kalkulator 155 MB, konten-claude-hf 117 MB, claude-ux-dark 101 MB, prompt-4-bahan 100 MB); Git LFS gratis cuma 1 GB/bulan; audio suara clone owner = biometrik. Opsi lain yang ditolak: Git LFS (bayar), kompres < 100 MB (kualitas turun).
 - **2026-10-14 · Repo publik** (pilihan owner). Risiko yang sudah disampaikan sekali: rencana konten, caption draft, dan angka performa terbuka untuk kompetitor; logo pihak ketiga ikut terpajang. Tidak ada lisensi open source → semua hak dilindungi.

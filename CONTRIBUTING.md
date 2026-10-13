@@ -1,22 +1,26 @@
 # Mengelola postingan
 
-Satu aturan dasar: **1 postingan = 1 folder `posts/<projek>/`**, dan **status/jadwal hanya ditulis di `JADWAL-UPLOAD.md`**. Jangan bikin catatan status di tempat lain — supaya tidak ada dua versi yang saling bertentangan.
+Satu aturan dasar: **1 postingan = 1 folder `posts/<tanggal>_<projek>/`**, dan **status/jadwal hanya ditulis di `JADWAL-UPLOAD.md`**. Jangan bikin catatan status di tempat lain — supaya tidak ada dua versi yang saling bertentangan.
 
-Nama folder = nama projek di `C:\BOT\HyperFrames\konten\<projek>` (huruf kecil, pakai tanda hubung: `slide-hermes`, `prompt-kalkulator`). Postingan carousel diawali `slide-`.
+Nama folder = `<tanggal>_<projek>`, contoh `2026-10-11_prompt-kalkulator`:
+- `<tanggal>` = **tanggal projek dibuat** (`createdAt` di `HyperFrames/konten/<projek>/meta.json`, WIB), format `YYYY-MM-DD` supaya urut kronologis. **Bukan tanggal tayang** — tanggal tayang sering geser dan dicatat di JADWAL; tanggal folder tidak pernah diganti.
+- `<projek>` = nama projek di `C:\BOT\HyperFrames\konten\<projek>` (huruf kecil, tanda hubung). Carousel diawali `slide-`. Nama ini juga yang ditulis di JADWAL (tanpa tanggal).
+- Skrip HyperFrames (`siap_upload.sh`, `make_covers.py`) otomatis memakai folder yang sudah ada, atau membuat folder bertanggal baru. Bikin manual (carousel)? Ambil tanggalnya dari `meta.json`.
+- Satu projek = satu folder. `scripts/cek.mjs` menolak nama tanpa tanggal dan projek yang punya dua folder.
 
 ## Menambah postingan
 
 ### Video
 1. Bikin & selesaikan di HyperFrames (alur lengkap: `docs/alur-kerja.md`).
 2. Dari `C:\BOT\HyperFrames\konten`: `bash ../tools/siap_upload.sh <projek>`
-   → otomatis membuat `posts/<projek>/` berisi `-master60.mp4`, `-preview.mp4`, `-cover.jpg`, `caption.txt`.
+   → otomatis membuat `posts/<tanggal>_<projek>/` berisi `-master60.mp4`, `-preview.mp4`, `-cover.jpg`, `caption.txt`.
    Sudah punya render & cuma mau ulang cover/caption: tambah `--skip-render`.
-3. Cover seragam feed (opsional): tambah entri di `HyperFrames/covers/covers.json`, jalankan `python tools/make_covers.py <projek>` → cover masuk ke `posts/<projek>/`.
+3. Cover seragam feed (opsional): tambah entri di `HyperFrames/covers/covers.json`, jalankan `python tools/make_covers.py <projek>` → cover masuk ke `posts/<tanggal>_<projek>/`.
 
 ### Carousel
-1. Ekspor slide JPG dari projek HyperFrames ke `posts/<projek>/slide-01.jpg …` (9:16, 1080×1920).
-2. Versi 3:4 (kalau ada) ke `posts/<projek>/3x4/`.
-3. Tulis `posts/<projek>/caption.txt` (format di bawah).
+1. Ekspor slide JPG dari projek HyperFrames ke `posts/<tanggal>_<projek>/slide-01.jpg …` (9:16, 1080×1920).
+2. Versi 3:4 (kalau ada) ke `posts/<tanggal>_<projek>/3x4/`.
+3. Tulis `posts/<tanggal>_<projek>/caption.txt` (format di bawah).
 
 ### Lalu, untuk keduanya
 4. Tambah 1 baris di tabel **Antrean** `JADWAL-UPLOAD.md`: nomor lanjut, tanggal & jam (WIB), `` `<projek>` `` dalam backtick, format, baris/desain cover, status.
@@ -38,18 +42,18 @@ DESKRIPSI
 3. Commit: `git commit -am "docs(jadwal): <projek> tayang"`.
 
 ## Mengubah postingan
-- Ganti file langsung di `posts/<projek>/` (nama file tetap sama), atau jalankan ulang `siap_upload.sh`.
+- Ganti file langsung di `posts/<tanggal>_<projek>/` (nama file tetap sama), atau jalankan ulang `siap_upload.sh`.
 - Video sudah tayang tapi mau diunggah ulang (contoh: #06 versi 3:4 → 9:16): tulis alasannya di kolom status, jangan bikin folder baru.
 
 ## Menghapus / mengarsipkan
 - **Batal tayang tapi mungkin dipakai lagi** → biarkan foldernya, status di JADWAL jadi `⚪ ditunda` + alasan.
-- **Benar-benar dibuang** → hapus baris di JADWAL **dan** folder `posts/<projek>/` dalam satu commit: `git rm -r posts/<projek>` lalu `git commit -m "chore(posts): remove <projek> — <alasan>"`. Video lokal di folder itu ikut terhapus dari disk — pastikan memang tidak perlu (proyek sumber tetap di HyperFrames, jadi bisa dirender ulang).
+- **Benar-benar dibuang** → hapus baris di JADWAL **dan** folder `posts/<tanggal>_<projek>/` dalam satu commit: `git rm -r posts/<tanggal>_<projek>` lalu `git commit -m "chore(posts): remove <projek> — <alasan>"`. Video lokal di folder itu ikut terhapus dari disk — pastikan memang tidak perlu (proyek sumber tetap di HyperFrames, jadi bisa dirender ulang).
 - Jangan menghapus postingan yang sudah ✅ tayang; cukup biarkan sebagai arsip.
 
 ## Memakai ulang (tanpa bikin dobel)
-- **Caption/hashtag mirip** → salin dari `posts/<projek-lama>/caption.txt`, jangan menulis dari nol.
+- **Caption/hashtag mirip** → salin dari `posts/<tanggal>_<projek-lama>/caption.txt`, jangan menulis dari nol.
 - **Gaya visual sama** → mulai dari projek HyperFrames-nya (lihat `HyperFrames/docs/katalog-gaya.md`), bukan dari file di sini.
-- **Upload ulang ke platform lain (Reels/Shorts)** → pakai file yang sama di `posts/<projek>/`; catat link platform tambahan di kolom link JADWAL (pisahkan dengan `·`).
+- **Upload ulang ke platform lain (Reels/Shorts)** → pakai file yang sama di `posts/<tanggal>_<projek>/`; catat link platform tambahan di kolom link JADWAL (pisahkan dengan `·`).
 - Sebelum bikin konten baru, cek tabel Antrean & folder `posts/` dulu supaya topiknya tidak mengulang.
 
 ## Konvensi commit

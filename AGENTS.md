@@ -4,7 +4,7 @@ Gudang hasil final konten sosmed owner Waroengku (Muh. Rifqi). Produksi ada di `
 
 ## Aturan
 1. **Status/jadwal/link/performa hanya di `JADWAL-UPLOAD.md`.** Jangan menulis status di file lain.
-2. 1 postingan = `posts/<projek>/`, nama sama dengan projek HyperFrames. Struktur isi: `README.md`.
+2. 1 postingan = `posts/<tanggal>_<projek>/`, nama sama dengan projek HyperFrames. Struktur isi: `README.md`.
 3. Tambah/ubah/hapus postingan: ikuti `CONTRIBUTING.md` persis. Menghapus folder postingan = tanya owner dulu (video lokal ikut hilang).
 4. Sebelum commit: `node scripts/cek.mjs` harus 0 error.
 5. Jangan commit video/audio/arsip (sudah di `.gitignore`), `.env`, cookie, token, atau rekaman suara owner. Repo ini **publik**.

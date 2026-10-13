@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Health check for this repo: every post folder is complete, JADWAL and posts/ agree, nothing too big gets committed.
 // Usage: node scripts/cek.mjs        (exit 1 when there are errors)
-import { readdirSync, readFileSync, statSync, existsSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -17,8 +17,14 @@ const inJadwal = new Set([...antrean.matchAll(/^\|\s*\d+\s*\|.*?`([^`]+)`/gm)].m
 
 const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(join(dir, e.name)) : [join(dir, e.name)]));
 
-for (const p of readdirSync(POSTS, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name)) {
-  const dir = join(POSTS, p);
+const seen = new Set();
+for (const folder of readdirSync(POSTS, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name)) {
+  const dir = join(POSTS, folder);
+  const m = folder.match(/^(\d{4}-\d{2}-\d{2})_(.+)$/); // posts/<YYYY-MM-DD>_<projek>
+  if (!m) errors.push(`${folder}: nama folder harus <YYYY-MM-DD>_<projek>`);
+  const p = m ? m[2] : folder;
+  if (seen.has(p)) errors.push(`${p}: ada lebih dari 1 folder untuk projek yang sama`);
+  seen.add(p);
   const files = readdirSync(dir);
   const isVideo = files.some((f) => f.endsWith("-master60.mp4"));
   const slides = files.filter((f) => /^slide-\d+\.jpg$/.test(f)).length;
@@ -37,9 +43,9 @@ for (const p of readdirSync(POSTS, { withFileTypes: true }).filter((e) => e.isDi
     const size = statSync(f).size;
     if (!IGNORED.has(extname(f).toLowerCase()) && size > GH_LIMIT) errors.push(`${f.slice(ROOT.length)}: ${(size / 1048576) | 0} MB > batas GitHub 100 MB dan tidak di-gitignore`);
   }
-  rows.push(`  ${p.padEnd(20)} ${kind.padEnd(12)} ${files.length} file`);
+  rows.push(`  ${folder.padEnd(31)} ${kind.padEnd(12)} ${files.length} file`);
 }
-for (const p of inJadwal) if (!existsSync(join(POSTS, p))) warns.push(`${p}: ada di JADWAL tapi folder posts/${p}/ belum ada`);
+for (const p of inJadwal) if (!seen.has(p)) warns.push(`${p}: ada di JADWAL tapi folder posts/<tanggal>_${p}/ belum ada`);
 
 console.log(`posts/ (${rows.length}):\n${rows.join("\n")}`);
 for (const w of warns) console.log(`  WARN  ${w}`);

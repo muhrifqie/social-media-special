@@ -1,6 +1,6 @@
 # Jadwal upload sosmed
 
-Satu-satunya sumber jadwal & status postingan (pindah dari `C:\BOT\HyperFrames` 14 Okt 2026). File siap upload ada di `posts/<projek>/` (repo ini). Isinya: master60 atau slide JPG, cover, dan `caption.txt`. Carousel versi 3:4 di `posts/<projek>/3x4/`.
+Satu-satunya sumber jadwal & status postingan (pindah dari `C:\BOT\HyperFrames` 14 Okt 2026). File siap upload ada di `posts/<tanggal>_<projek>/` (repo ini). Isinya: master60 atau slide JPG, cover, dan `caption.txt`. Carousel versi 3:4 di `posts/<tanggal>_<projek>/3x4/`.
 Waktu dalam WIB. Grid TikTok punya 3 kolom, jadi **1 baris = 3 postingan dengan desain cover yang sama**.
 
 **Status:** ✅ tayang · 🟢 siap upload · 🟡 butuh langkah lagi · ⚪ belum dibuat
@@ -27,7 +27,7 @@ Ritme: 1 postingan tiap 2 hari. Satu baris (3 postingan) selesai dalam ±6 hari,
 
 ## Checklist tiap upload
 
-1. Buka `posts/<projek>/`.
+1. Buka `posts/<tanggal>_<projek>/`.
 2. Upload file sesuai format:
    - **Video**: `<projek>-master60.mp4` (jangan pakai `-preview`), lalu cover pilih `<projek>-cover.jpg`.
    - **Carousel**: `slide-01.jpg` … sesuai urutan. Slide 01 otomatis jadi cover.
@@ -54,6 +54,6 @@ Ritme: 1 postingan tiap 2 hari. Satu baris (3 postingan) selesai dalam ±6 hari,
 
 Lengkapnya di `CONTRIBUTING.md`. Ringkasnya:
 1. Buat projek di HyperFrames: `cd C:\BOT\HyperFrames\konten && npx -y hyperframes@0.8.154 init <nama> --non-interactive`.
-2. Video: `bash ../tools/siap_upload.sh <nama>` (dari folder `konten/`) → hasil langsung masuk `posts/<nama>/` di repo ini. Carousel: ekspor JPG ke `posts/<nama>/` (+ `posts/<nama>/3x4/` kalau ada versi 3:4).
+2. Video: `bash ../tools/siap_upload.sh <nama>` (dari folder `konten/`) → hasil langsung masuk `posts/<tanggal>_<nama>/` di repo ini. Carousel: ekspor JPG ke `posts/<tanggal>_<nama>/` (+ `posts/<tanggal>_<nama>/3x4/` kalau ada versi 3:4).
 3. Tambah baris di tabel Antrean. Nomor lanjut, dan baris cover ganti desain tiap 3 postingan.
 4. Cek: `node scripts/cek.mjs`.

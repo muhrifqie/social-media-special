@@ -18,7 +18,8 @@ Social Media Special/
 ├── scripts/
 │   └── cek.mjs            pemeriksa kesehatan repo (jalankan sebelum commit)
 └── posts/
-    └── <projek>/          1 folder = 1 postingan, nama = nama projek HyperFrames
+    └── <tanggal>_<projek>/   1 folder = 1 postingan, contoh 2026-10-11_prompt-kalkulator
+                           (tanggal = projek dibuat, bukan tanggal tayang — lihat CONTRIBUTING.md)
         ├── caption.txt            JUDUL + DESKRIPSI siap tempel
         ├── <projek>-cover.jpg     cover video (1080×1920)
         ├── <projek>-master60.mp4  file UNGGAH (60 fps, 16 Mbps)   ⟵ lokal saja, tidak di-push
@@ -33,7 +34,7 @@ Social Media Special/
 |---|---|
 | Lihat apa yang siap tayang | buka `JADWAL-UPLOAD.md` → tabel Antrean, status 🟢 |
 | Unggah satu postingan | ikuti "Checklist tiap upload" di `JADWAL-UPLOAD.md` |
-| Bikin postingan video baru | dari HyperFrames: `bash ../tools/siap_upload.sh <nama>` → otomatis masuk `posts/<nama>/` |
+| Bikin postingan video baru | dari HyperFrames: `bash ../tools/siap_upload.sh <nama>` → otomatis masuk `posts/<tanggal>_<nama>/` |
 | Cek repo sehat | `node scripts/cek.mjs` (0 error = aman di-commit) |
 | Tambah / hapus / arsipkan | lihat `CONTRIBUTING.md` |
 

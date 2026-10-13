@@ -13,8 +13,8 @@ Semua aturan produksi ada di sana — jangan disalin ke repo ini:
 - Proyek dibuat di `HyperFrames/konten/<projek>/`.
 
 ## 2. Ke repo ini (hasil final)
-- Video: `bash ../tools/siap_upload.sh <projek>` dari `HyperFrames/konten` → `posts/<projek>/`.
-- Carousel: ekspor JPG ke `posts/<projek>/`.
+- Video: `bash ../tools/siap_upload.sh <projek>` dari `HyperFrames/konten` → `posts/<tanggal>_<projek>/`.
+- Carousel: ekspor JPG ke `posts/<tanggal>_<projek>/`.
 - Lokasi tujuan bisa diganti dengan variabel lingkungan `SMS_DIR` (default `C:\BOT\Social Media Special`). Dipakai oleh `tools/siap_upload.sh` dan `tools/make_covers.py`.
 - Tambah baris JADWAL → `node scripts/cek.mjs` → commit.
 
