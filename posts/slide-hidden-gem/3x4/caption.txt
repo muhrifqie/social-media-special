@@ -1,0 +1,19 @@
+JUDUL (maks 90 karakter):
+8 Repo GitHub Hidden Gem Buat Ngoding Pakai AI 💎
+
+DESKRIPSI:
+Repo bagus yang jarang dibahas, padahal kepakai banget. Semua gratis & masih aktif per Oktober 2026 👇
+
+1. gitingest: ganti "hub" jadi "ingest" di link, repo jadi teks buat AI
+2. ccusage: cek pemakaian token & biaya Claude Code
+3. tweakcn: atur tema shadcn/ui secara visual
+4. Figma-Context-MCP: AI baca desain Figma, langsung jadi kode
+5. browser-tools-mcp: AI lihat console & error di Chrome kamu
+6. markdownify-mcp: PDF, Excel, YouTube jadi Markdown
+7. ccstatusline: status bar mini di terminal Claude Code
+8. how-to-build-a-coding-agent: workshop bikin agen sendiri
+
+Nomor berapa yang baru kamu tahu? Tulis di komen! Save dulu biar nggak lupa 🔖
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #hiddengem #github #vibecoding #claudecode #opensource #ai #samasamabelajar

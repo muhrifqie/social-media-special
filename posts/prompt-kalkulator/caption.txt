@@ -1,0 +1,17 @@
+Patungan ribet? Cukup 1 prompt, kalkulatornya langsung jadi 🧮
+
+Prompt-nya (copy aja):
+"Bang, bikinin kalkulator patungan dong. Bagi rata, input nama sama jumlah."
+
+Caranya:
+1. Buka Claude di web atau aplikasi desktop (bukan terminal)
+2. Tempel prompt di atas, kirim
+3. Kurang cocok? Lanjutin chatnya, misal "tambahin pajak 10% ya"
+
+Nggak perlu setting apa-apa, tinggal bilang maunya apa.
+
+Mau dibikinin apa lagi pakai 1 prompt? Tulis di komen 👇
+Save dulu biar nggak lupa 🔖
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #claudeai #claude #promptai #tutorialai #aiindonesia #patungan #samasamabelajar

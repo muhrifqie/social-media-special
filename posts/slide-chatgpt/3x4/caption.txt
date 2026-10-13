@@ -1,0 +1,20 @@
+JUDUL (maks 90 karakter):
+ChatGPT dari Sisi Developer: Codex vs Claude Code 👨‍💻
+
+DESKRIPSI:
+Buat yang udah ngerti dasar ngoding pakai AI, ini bedanya Codex (agen ngoding di ChatGPT) sama Claude Code 👇
+
+1. Codex ada di semua paket ChatGPT, termasuk Free & Go
+2. Codex CLI open source (Apache-2.0), Claude Code tidak
+3. Steer vs queue: Enter ubah arah, Tab antre ke run berikutnya
+4. Auto-review: reviewer kedua cek aksi berisiko (gratis)
+5. Codex Cloud: task tetap jalan walau laptop tidur
+6. Code Review & Security Cloud: scan repo terjadwal/tiap commit
+7. Automation dari event MCP
+
+Claude Code unggul di hooks, skills, CLAUDE.md, Slack & /teleport. Dicek dari dokumentasi resmi, 11 Okt 2026.
+Tim Codex atau tim Claude Code? Tulis di komen! Save dulu biar nggak lupa 🔖
+Mau ChatGPT via invite? Cek link di bio 🔗
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #chatgpt #codex #claudecode #openai #vibecoding #programmer #samasamabelajar

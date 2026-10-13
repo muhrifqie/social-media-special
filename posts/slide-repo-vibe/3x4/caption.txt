@@ -1,0 +1,19 @@
+JUDUL (maks 90 karakter):
+8 Repo GitHub Wajib Buat Vibe Coder 💻
+
+DESKRIPSI:
+Biar nggak ngoding pakai feeling, pasang repo-repo ini 👇
+
+1. superpowers: skill biar agen AI kerja kayak senior
+2. anthropics/skills: Agent Skills resmi dari Anthropic
+3. claude-code: agen ngoding di terminal
+4. spec-kit: tulis spek dulu, AI ngoding ngikutin
+5. shadcn/ui: komponen UI siap pakai
+6. MCP servers: sambungin AI ke file, Git, web
+7. context7: dokumentasi library terbaru buat AI
+8. hyperframes: HTML + animasi jadi video
+
+Nomor berapa yang belum kamu pakai? Tulis di komen! Save dulu biar nggak lupa 🔖
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #vibecoding #github #claudecode #ai #programmer #coding #samasamabelajar

@@ -1,0 +1,20 @@
+JUDUL (maks 90 karakter):
+8 Fitur Khas Claude Code yang Jarang Ada di Agen Lain 🧡
+
+DESKRIPSI:
+Kebanyakan agen ngoding cuma hidup di terminal. Claude Code nyambung ke HP, web, Slack, sampai cloud 👇
+
+1. /remote-control: lanjut sesi laptop dari HP
+2. /teleport: tarik sesi cloud ke terminal
+3. /schedule: routine jalan sendiri di cloud
+4. @Claude di Slack: kasih tugas lewat chat
+5. Artifacts: hasil kerja jadi halaman interaktif
+6. Projects: pantau banyak agen sekaligus
+7. Auto mode: kerja lama, perintah berisiko tetap ditahan
+8. /insights: rapor cara kamu pakai Claude
+
+Dicek per 11 Okt 2026 dari situs & dokumentasi resmi.
+Tim Claude Code atau tim Hermes? Jawab di komen! Save dulu biar nggak lupa 🔖
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #claudecode #claudeai #anthropic #aiagent #vibecoding #programmer #samasamabelajar

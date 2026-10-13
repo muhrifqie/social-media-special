@@ -1,0 +1,18 @@
+# Large media stays local only (GitHub limit 100 MB/file) — see docs/keputusan.md
+*.mp4
+*.mov
+*.webm
+*.zip
+*.rar
+# Audio: owner's voice clone = biometric data, never commit
+*.mp3
+*.wav
+*.m4a
+# Secrets & OS junk
+.env*
+*.har
+cookies*
+desktop.ini
+Thumbs.db
+.DS_Store
+node_modules/

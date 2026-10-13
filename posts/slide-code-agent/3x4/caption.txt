@@ -1,0 +1,19 @@
+JUDUL (maks 90 karakter):
+8 Code Agent Open Source yang Wajib Dicoba 🤖
+
+DESKRIPSI:
+AI yang bisa baca project, nulis kode, dan jalanin perintah sendiri. Semua gratis & open source 👇
+
+1. hermes-agent: belajar dari pengalaman
+2. opencode: alternatif gratis paling ramai
+3. codex: versi resmi dari OpenAI
+4. pi: minimalis, gampang dibentuk
+5. gemini-cli: Gemini langsung di terminal
+6. OpenHands: kayak punya developer tambahan
+7. cline: buat yang betah di VS Code
+8. oh-my-pi: Pi versi lengkap
+
+Nomor berapa yang paling menarik? Tulis di komen! Save dulu biar nggak lupa 🔖
+Follow buat info pengetahuan AI terbaru 🔔
+
+#fyp #fypシ #xyzbca #codeagent #vibecoding #opensource #github #ai #programmer #samasamabelajar
