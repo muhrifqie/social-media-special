@@ -20,6 +20,7 @@ Waktu dalam WIB. Grid TikTok punya 3 kolom, jadi **1 baris = 3 postingan dengan 
 | 08 | Sen 19 Okt 2026 | 19:00 | `slide-claude-code` | Carousel 11 foto 9:16 + 3:4 (8 fitur khas) | Baris 3 · gaya situs resmi (Claude) | 🟢 siap | |
 | 09 | **Sen 12 Okt 2026** | 19:00 | `slide-chatgpt` | Carousel 11 foto 9:16 + 3:4 (Codex vs Claude Code, sisi dev) | Baris 3 · gaya situs resmi (ChatGPT) | 🟢 siap | |
 | 10 | Rab 14 Okt 2026 (usul) | 19:00 | `prompt-kalkulator` | Video 80 dtk · seri "1 Prompt, Langsung Jadi" eps 1 | Baris 4 · **Notif iOS** (gelap + kartu terang) | 🟢 siap | |
+| 11 | Rab 21 Okt 2026 (usul) | 19:00 | `halusinasi-ai` | Video 110 dtk · Cara kerja AI #02 (AI ngarang/halusinasi, suara Mr. P) | Baris 4 · **Incoming Call + Vowel Marks** (gelap, coral/biru) | 🟢 siap | |
 
 Cadangan (baris 4+): `ai-air-emoji`, `ai-air-listrik` (video fun fact; butuh cover baris berikutnya + caption + master60).
 

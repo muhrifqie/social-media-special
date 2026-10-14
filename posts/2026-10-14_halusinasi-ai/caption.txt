@@ -1,0 +1,16 @@
+AI ngarang itu bukan bohong, dia lagi nebak 🎯
+
+Tahun 2023 ada pengacara di New York yang ngutip 6 putusan pengadilan hasil ChatGPT. Ternyata semuanya nggak pernah ada, dan dia didenda $5.000.
+
+3 aturan biar AI berani bilang "nggak tahu":
+1. Kalau nggak yakin, bilang aja nggak tahu
+2. Kutip kalimat aslinya dulu dari dokumen, baru jawab
+3. Cek ulang tiap klaim, yang nggak ada sumbernya dihapus
+
+Buat yang ngoding: pakai Context7 biar AI baca dokumentasi terbaru dulu.
+
+Follow buat tips AI yang gampang dipraktikin 👉
+
+Sumber: putusan Mata v. Avianca (22 Jun 2023), panduan Anthropic "Reduce hallucinations". Contoh jurnal di video = ilustrasi.
+
+#AI #ChatGPT #Claude #BelajarAI #TipsAI #Halusinasi #Teknologi
